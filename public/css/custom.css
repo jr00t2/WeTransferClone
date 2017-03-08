@@ -1,0 +1,8 @@
+.card-body > .img-fluid {
+    width: 50px;
+}
+
+.card-body, .panel-heading {
+    text-align: center;
+}
+

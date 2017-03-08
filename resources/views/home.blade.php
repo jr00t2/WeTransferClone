@@ -1,17 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    <input type="button" value="Upload" onclick="showPicker()" />
+                    <div class="container">
+                        <h3>Bild teilen</h3>
+                        <input type="password" name="password" class="password"/>
+                        <input type="button" value="Upload" onclick="showPicker()"/>
+                    </div>
+                    @include('file.gallery', compact('files'))
                 </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
