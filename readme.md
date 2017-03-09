@@ -1,3 +1,52 @@
+## Vorbereitung
+- Installierter MYSQL-Server (z.b. mit MAMP)
+- Leere Datenbank Name "WeTransferClone"
+- Klonen des gesamten Projekts
+- Erstellen des FileStack DEMO Accounts bzw. Free plans
+
+## Installation
+Zu aller erst wechseln wir in das root Verzeichnis des WeTransferClone-Projekts.
+Hier führen wir nacheinander folgende Befehle aus:
+  php update --no-scripts
+  cp .env.example .env
+  php artisan key:generate
+  
+Als nächstes bearbeiten wir noch die kopierte .env datei und passen den MYSQL DB Zugang und den Filestack API key an. 
+Der hinterlegte Key würde ebenfalls funktionieren jedoch sieht man dann in seinem Filestack account keine Dateien.
+  vim .env 
+
+Wenn die Datenbank richtig konfiguriert ist führen wir anschließend folgenden Befehl aus und bestätigen mit "yes":
+  php artisan migrate
+  
+Unsere Datenbank sollte nun einige Tabellen wie "users", "files" und "migrations" beinhalten.
+
+Um einen kleinen apache server zu starten und nichts nachinstallieren zu müssen führen wir nun:
+  php artisan serve
+aus.
+Auf 127.0.0.1:8000 sollte nun eine Webapplikation erreichbar sein. 
+Neuen Account Registrieren und los gehts!
+
+## Interessante Dateien und Pfade
+
+# Controller
+app/http/Controllers/   FileController/HomeController
+
+# Models
+app/    File/User
+
+# Migrationen
+database/migrations
+
+# Javascript
+public/js/filepicker.js
+
+# Views
+resources/views   
+
+# Routen
+routes/web.php
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
