@@ -27,7 +27,7 @@ class FileController extends Controller
 			return response()->download($tempImage, $file->name);
 		}
 
-		abort(404);
+		return back()->with('status', 'Falsches Passwort!');
 	}
 
 	public function store(Request $input)

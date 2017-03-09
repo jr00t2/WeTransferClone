@@ -10,7 +10,7 @@
                     <div class="container">
                         <h3>Bild teilen</h3>
                         <input type="password" name="password" class="password"/>
-                        <input type="button" value="Upload" onclick="showPicker()"/>
+                        <input type="button" value="Upload" onclick="upload()"/>
                     </div>
                     @include('file.gallery', compact('files'))
                 </div>

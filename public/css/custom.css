@@ -6,3 +6,6 @@
     text-align: center;
 }
 
+.copied-text {
+    display: none;
+}
