@@ -27,6 +27,15 @@ aus.
 Auf 127.0.0.1:8000 sollte nun eine Webapplikation erreichbar sein. 
 Neuen Account Registrieren und los gehts!
 
+## Known Problem
+- Wird auf der Filestack instanz ein Bild gelöscht, weiss die Applikation nichts davon und wird nicht benachrichtigt.
+- Wird eine Referenz zu einem Filestack Bild in der "files" Datenbank gelöscht ist das Bild zwar noch auf Filestack vorhanden kann aber innerhalb der Applikation nichtmehr gefunden werden
+
+## Möglichkeiten diese Probleme zu minimieren
+- Keine Dateireferenzen Datenbank-seitig löschen.
+- Implementierung einer Löschfunktion welche sich den Problemen annimmt und die Dateien sowohl bei Filestack als auch Datenbank-seitig löscht.
+- Keine Bilder Filestack seitig löschen
+
 ## Interessante Dateien und Pfade
 
 # Controller
