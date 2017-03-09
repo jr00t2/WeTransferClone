@@ -1,4 +1,4 @@
-var client = filestack.init('ARVjvVcQ0Q4W4E5DTEbzAz');
+var client = filestack.init(api_key);
 
 function upload() {
     client.pick({}).then(function (result) {
