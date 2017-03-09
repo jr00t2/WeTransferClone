@@ -22,6 +22,7 @@ Unsere Datenbank sollte nun einige Tabellen wie "users", "files" und "migrations
 
 Um einen kleinen apache server zu starten und nichts nachinstallieren zu müssen führen wir nun:
 - php artisan serve
+
 aus.
 Auf 127.0.0.1:8000 sollte nun eine Webapplikation erreichbar sein. 
 Neuen Account Registrieren und los gehts!
