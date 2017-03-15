@@ -7,7 +7,7 @@
 ## Installation
 Zu aller erst wechseln wir in das root Verzeichnis des WeTransferClone-Projekts.
 Hier führen wir nacheinander folgende Befehle aus:
-- php update --no-scripts
+- php composer update --no-scripts
 - cp .env.example .env
 - php artisan key:generate
   
